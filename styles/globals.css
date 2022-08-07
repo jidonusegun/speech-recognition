@@ -15,12 +15,78 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.home {
+  background-color: #333;
+  min-height: 100%;
+  padding: 0 1rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 2rem 0;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 1rem;
+}
+
+.button-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+button {
+  color: white;
+  background-color: var(--bgColor);
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+.words {
+  max-width: 700px;
+  margin: 50px auto;
+  height: 50vh;
+  border-radius: 5px;
+  padding: 1rem 2rem 1rem 5rem;
+  background: white;
+  background-size: 100% 3rem;
+  background-attachment: scroll;
+  position: relative;
+  line-height: 3rem;
+  overflow-y: auto;
+}
+
+.success,
+.error {
+  background-color: #fff;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: max-content;
+  text-align: center;
+  display: block;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
 }
